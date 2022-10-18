@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style2.css">
+    <title>Expense Tracking App</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="topSection">
+            <div class="wrapper">
+                <h1 class="title">Expense Tracking</h1>
+                <div class="summary">
+                    <div class="balance">
+                        <p>YOUR BALANCE</p>
+                        <p id="balance"></p>
+                    </div>
+                    <div class="income">
+                        <p>INCOME</p>
+                        <p id="totalIncome"></p>
+                    </div>
+                    <div class="expense">
+                        <p>EXPENSE</p>
+                        <p id="totalExpense"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="history">
+            <div class="wrapper">
+                <h2 class="title">History</h2>
+                <div class="historyTable">
+                    <table id="historyTable" border="1">
+                        <tr>
+                            <th>Items</th>
+                            <th>Amount</th>
+                            <th>Date</th>
+                            <th>Type</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </section>
+        <section class="transactions">
+            <div class="wrapper">
+                <h2 class="title">Add Transaction</h2>
+                <div class="addTransaction">
+                    <form action="#">
+                        <label for="transaction">Select Transaction type:</label>
+                        <select name="transaction" id="transactionType">
+                            <option value="income">TRANSECTION TYPE</option>
+                            <option value="expense">Expense</option>
+                            <option value="income">Income</option>
+
+                        </select>
+                        <br><br>
+                        <div class="transactionItem">
+                            <input type="text" id="transactionItem" placeholder="enter input.." required>
+                            <input type="number" id="transactionAmount" required>
+                            <input type="date" id="transactionDate" required>
+                        </div>
+                        <br><br>
+                        <input type="submit" value="Add " id="transactionBtn" style=" margin: auto;">
+                    </form>
+                </div>
+            </div>
+        </section>
+    </div>
+<script src="./ExpanseTracker.js"></script>
+    <!-- <script src="./help.js"></script> -->
+</body>
+
+</html>

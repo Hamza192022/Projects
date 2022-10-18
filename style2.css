@@ -1,0 +1,128 @@
+
+/*===================Global Styling===================*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    width: 600px;
+    height: 600px;
+    text-align: center;
+    margin-left: 350px;
+}
+.container{
+    background-color: aliceblue;
+}
+.wrapper{
+    max-width: 1400px;
+    margin: auto;
+    padding: 15px;
+}
+section{
+    padding: 15px 0;
+}
+
+/*===================Top Section===================*/
+.topSection{
+    min-height: 300px;
+}
+.title{
+    text-align: center;
+    font-size: 2rem;
+}
+.summary{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(auto, 400px));
+}
+.balance{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: green;
+}
+.history .title{
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+/*===================Hostory Section===================*/
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+/*===================Transaction Section===================*/
+.addTransaction{
+    text-align: center;
+}
+
+.balance:hover{
+    background-color: black;
+    color: white;
+}
+.income{
+    background-color: blue;
+}
+.income:hover{
+    background-color: black;
+    color: white;
+}
+.expense{
+    background-color: red;
+}
+.expense:hover{
+    background-color: black;
+    color: white;
+
+}
+
+#historyTable{
+    border-radius: 1px;
+    background-color: rgb(143, 173, 157);
+}
+#transactionType{
+    background-color: greenyellow;
+}
+.transactionItem{
+    /* background-color:white; */
+    
+    color: white;
+}
+/* input{
+    background-color: white;
+    color: white;
+    border-radius: 5px;
+    /* border: black; */
+/* } */
+.transactionItem,.transactionAmount,.transactionDate{
+    /* background-color: white; */
+    color: black;
+    border-radius: 5px;
+
+}
+
+#transactionBtn{
+
+    background-color: white;
+    color: blue;
+    width: 80px;
+    height: 30px;
+    border-radius: 30px;
+    /* text-align: right; */
+    /* margin-bottom: 100px; */
+    margin-right: 1000px;
+}
+
+#transactionBtn:hover{
+    background-color: green;
+    color: white;
+}
+
